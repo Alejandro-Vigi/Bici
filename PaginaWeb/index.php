@@ -11,11 +11,16 @@
 <body>
     <header>
         <div class = "logo-header">
-            <img src = "/PaginaWeb/img/Logo.png">
-            <a href = "/PaginaWeb/index.html">Inicio</a>
-            <a href = "/PaginaWeb/Servicios/servicios.html">Servicio</a>
-            <a href = "/PaginaWeb/Contacto/contacto.html">Contacto</a>
+            <img src = "img/Logo.png">
+            <a href = "index.php">Inicio</a>
+            <a href = "Servicios/servicios.html">Servicio</a>
+            <a href = "Contacto/contacto.php">Contacto</a>
         </div>
     </header>
+
+    <?php
+        include("Conexion/conexion.php");
+    ?>
+
 </body>
 </html>

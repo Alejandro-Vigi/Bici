@@ -5,6 +5,14 @@
     box-sizing: inherit;
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
 img{
     max-width: 100%;
 }
@@ -14,6 +22,13 @@ body{
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+textarea {
+    resize: none;
 }
 
 /*---------------Header---------------*/
@@ -70,4 +85,126 @@ header{
         height: 35px;
         width: 30px;
     }
+}
+
+/*----------Footer----------*/
+footer{
+    background-color: rgb(32, 32, 32);
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: darkgray;
+    text-align: center;
+    line-height:normal;
+    align-items: center;
+}
+
+.footer-posicion{
+    display: flex;
+    justify-content:space-around;
+}
+
+.footer-img img{
+    height: 35px;
+    margin-inline-start: 5px;
+}
+
+@media (max-width: 600px){
+    .footer-posicion{
+        display: grid;
+        font-size: 0.7rem;
+        grid-template-rows: 45px 30px;
+        height: 85px;
+    }
+
+    .footer-img{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%
+    }
+}
+
+
+/*---------------CONTACTO---------------*/
+/*---------------CONTACTO---------------*/
+/*---------------CONTACTO---------------*/
+
+.formulario-contacto {
+    width: auto;
+    height: 450px;
+    background: black;
+    padding: 30px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .formulario-contacto h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-contacto {
+    width: 100%;
+    background: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 2px solid rgb(136, 136, 136);
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+
+  .formulario-contacto .boton-contacto {
+    width: 100%;
+    background: rgb(136, 136, 136);
+    border-radius: 15px;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 18px;
+  }
+
+.validacion{
+    background-color: rgb(29, 112, 47);
+    margin-top: 20px;
+    margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+	padding: 6px;
+	color: #fff
+}
+
+.validacion-error{
+	text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	width: 100%;
+	padding: 6px;
+	background-color: #a22;
+	color: #fff
+}
+
+@media (max-width: 600px){
+    .formulario-contacto {
+        width: auto;
+        height: 450px;
+        background: black;
+        padding: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        border-radius: 5px;
+        font-family: 'calibri';
+        color: white;
+        box-shadow: 7px 13px 37px #000;
+      }
 }
